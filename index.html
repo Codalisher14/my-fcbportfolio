@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jomari Nacional - QA Engineering</title>
+
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+	<link rel="manifest" href="./site.webmanifest" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-[#030712] bg-grid-cyber antialiased selection:bg-cyan-500 selection:text-white">
+    <!-- ========================================== -->
+    <!-- NAVIGATION BAR                             -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-50 border-b border-cyan-950/80 bg-[#030712]/90 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a href="#home" class="brand-font font-bold text-xl tracking-wider text-cyan-400 flex items-center gap-2">
+          <svg class="w-6 h-6 text-cyan-400 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          </svg> FCBPortfolio </a>
+        <!-- Navbar Links Matching Wireframe (Home, About, Projects, Links) -->
+        <nav class="flex items-center gap-6 md:gap-8 text-sm font-medium text-slate-300">
+          <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+          <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+          <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#contact" class="hover:text-cyan-400 transition-colors">Links</a>
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 space-y-24">
+      <!-- ========================================== -->
+      <!-- HERO SECTION                               -->
+      <!-- Wireframe: Profile image left, Heading + Description + 2 Buttons right -->
+      <!-- ========================================== -->
+      <section id="home" class="scroll-mt-24 pt-4">
+        <div class="cyber-card rounded-3xl p-8 md:p-12 border border-cyan-500/30 flex flex-col md:flex-row items-center gap-10 md:gap-14">
+          <!-- Hero Avatar / Profile Image -->
+          <div class="w-full md:w-5/12 max-w-[340px] aspect-square rounded-2xl overflow-hidden border-2 border-cyan-500/40 bg-slate-900/80 p-2 shadow-lg shadow-cyan-950/60 flex-shrink-0">
+            <!-- EDIT: PROFILE_IMAGE -->
+            <img src="./Profile.jpg" alt="Your Name" class="w-full h-full object-cover rounded-xl" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <!-- Hero Content -->
+          <div class="w-full md:w-7/12 flex flex-col items-start space-y-5">
+            <!-- Corporate QA Cyber Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium mono-font bg-cyan-950/60 border border-cyan-500/30 text-cyan-300">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <!-- EDIT: STATUS_BADGE -->
+              <span>QA Engineering Specification</span>
+            </div>
+            <!-- EDIT: YOUR_NAME (Heading) -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight"> Jomari Nacional </h1>
+            <!-- EDIT: YOUR_JOB_TITLE (Description) -->
+            <h2 class="text-xl sm:text-2xl font-semibold text-cyan-400"> QA Engineer </h2>
+            <!-- EDIT: SHORT_INTRODUCTION -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl"> QA Engineer specializing in software testing, test case development, bug tracking, and quality assurance to deliver reliable, user-friendly software. </p>
+            <!-- Action Buttons (View My Projects, Contacts matching wireframe) -->
+            <div class="flex flex-wrap items-center gap-4 pt-4 w-full sm:w-auto">
+              <!-- EDIT: VIEW_PROJECTS_BUTTON -->
+              <a href="#projects" class="neon-button-primary px-7 py-3 rounded-xl font-semibold text-white text-sm sm:text-base text-center w-full sm:w-auto"> View My Projects </a>
+              <!-- EDIT: CONTACTS_BUTTON -->
+              <a href="#contact" class="neon-button-secondary px-7 py-3 rounded-xl font-semibold text-cyan-300 text-sm sm:text-base text-center w-full sm:w-auto"> Contacts </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- ABOUT SECTION                              -->
+      <!-- Wireframe: Heading "About", Single large stadium capsule card containing About You -->
+      <!-- ========================================== -->
+      <section id="about" class="scroll-mt-24 space-y-6">
+        <div class="text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">About</h2>
+        </div>
+        <div class="cyber-card stadium-border p-8 sm:p-12 md:p-16 border-2 border-cyan-500/30 text-center flex items-center justify-center min-h-[180px]">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto"> As a Quality Assurance (QA) Engineer, I focus on ensuring software applications meet quality standards, function reliably, and deliver a smooth user experience. My skills and interests include software testing, test case development, bug tracking, functional testing, and identifying potential issues before they affect end users. I value attention to detail, analytical thinking, and continuous improvement throughout the software development lifecycle. My goal is to help development teams deliver reliable, user-friendly, and high-quality software through systematic testing and effective quality assurance practices. </p>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- PROJECTS SECTION                           -->
+      <!-- Wireframe: Heading "Projects", Exactly 3 cards with image, title, description, link -->
+      <!-- ========================================== -->
+      <section id="projects" class="scroll-mt-24 space-y-8">
+        <div class="text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="cyber-card rounded-2xl overflow-hidden flex flex-col border border-cyan-500/25">
+            <!-- Card Image Container -->
+            <div class="w-full h-52 bg-slate-900 overflow-hidden relative border-b border-cyan-950">
+              <!-- EDIT: PROJECT_IMAGE_1 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5vc0xMCIlq_o8L6OYwjMa1szKgQPrhcs4pBv7W4t57Z-d6C9lE4kKN4UmTnQ9r8ApKLGeRojAXjvz4XkgEiwNKuBTJNmt1F3MS-7PmzJOw2n19B3o9PGQTFZmWAGx6Z-V-o_nID7T3cpgNuVJBz04BjIDYkVSz4NFglyG9uQCvcbNAJ0KYoOFZ4EpP3n2qti_dCKsX0cZPplebq4Rnt56dsSdZwPwL23ORGf6Fsw" alt="Project Title" class="w-full h-full object-cover" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Card Body -->
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_1 -->
+                <h3 class="text-xl font-bold text-white">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_1 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_1 -->
+              <a href="#contact" class="neon-button-primary px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center inline-block"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="cyber-card rounded-2xl overflow-hidden flex flex-col border border-cyan-500/25">
+            <!-- Card Image Container -->
+            <div class="w-full h-52 bg-slate-900 overflow-hidden relative border-b border-cyan-950">
+              <!-- EDIT: PROJECT_IMAGE_2 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI11xF8lZPkTsrwuvRU0vLrMwc7jPJGKcb6vOiGfNkJI9JxDBx9nFDgrMiFtOvhAcXol1XROnlnkqv8jx6e8az59xZvXWzk-EkU4-kNp2QqzInwk7Bz1YS0Zf1uwiUbg1vcOtdJQpI8yRzhjS8jNLYo6YGl3XCROuVu74hsEYnyMHjSVziRJoja6RMaNwGlZCaqHiSs-7P6_OAZnlH0B69LuAmn3XDM4U6lNRmw94" alt="Project Title" class="w-full h-full object-cover" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Card Body -->
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_2 -->
+                <h3 class="text-xl font-bold text-white">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_2 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_2 -->
+              <a href="#contact" class="neon-button-primary px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center inline-block"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="cyber-card rounded-2xl overflow-hidden flex flex-col border border-cyan-500/25">
+            <!-- Card Image Container -->
+            <div class="w-full h-52 bg-slate-900 overflow-hidden relative border-b border-cyan-950">
+              <!-- EDIT: PROJECT_IMAGE_3 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3WNaR5CZcb0GSezPTX6AuAjJhiFdbA8N3sJMmTQ9S2JZCzoiGpep-pf5oK2QF6lX5joBsOgm2o8T6_haFUudqXU3x8BzulqqknYwwtyZe6w-ldSzEcuy-_uo9FlmfbP9Qzko3giciY-DnCjXlhXqkiwyxsxBysJgoWzyfWseulQXA9wnfjOtmBVOJFsHzF7vrbrX9n8ChJiFwQXh-hzNUM7a7hxy_YXZybLvT9g" alt="Project Title" class="w-full h-full object-cover" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Card Body -->
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_3 -->
+                <h3 class="text-xl font-bold text-white">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_3 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_3 -->
+              <a href="#contact" class="neon-button-primary px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center inline-block"> Project Link </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SKILLS AND TOOLS SECTION                   -->
+      <!-- Wireframe: Heading "Skills and Tools", exactly 2 side-by-side cards -->
+      <!-- Each card has heading and one <ul> with plain <li> -->
+      <!-- ========================================== -->
+      <section class="space-y-8">
+        <div class="text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Skills and Tools</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Skills Card -->
+          <div class="cyber-card stadium-border p-8 sm:p-10 border-2 border-cyan-500/30 flex flex-col items-center text-center">
+            <!-- EDIT: SKILLS_HEADING -->
+            <h3 class="text-2xl font-bold text-cyan-400 mb-6">Skills</h3>
+            <!-- EDIT: SKILLS_LIST -->
+            <ul class="space-y-3 w-full max-w-xs text-slate-300 text-base">
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Python</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Javascript</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Roboflow</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">MobilenetV3</li>
+            </ul>
+          </div>
+          <!-- Tools / Technologies Card -->
+          <div class="cyber-card stadium-border p-8 sm:p-10 border-2 border-cyan-500/30 flex flex-col items-center text-center">
+            <!-- EDIT: TOOLS_HEADING -->
+            <h3 class="text-2xl font-bold text-cyan-400 mb-6">Tools</h3>
+            <!-- EDIT: TOOLS_LIST -->
+            <ul class="space-y-3 w-full max-w-xs text-slate-300 text-base">
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Live Server</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Firebase</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Sublime</li>
+              <li class="py-2 px-4 rounded-lg bg-slate-900/60 border border-cyan-900/40">Tiberias</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- CONTACT SECTION                            -->
+      <!-- Wireframe: Heading "Contact", stadium card with Contact Info & social media anchor tag -->
+      <!-- ========================================== -->
+      <section id="contact" class="scroll-mt-24 space-y-6">
+        <div class="text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Contact</h2>
+        </div>
+        <div class="cyber-card stadium-border p-8 sm:p-12 md:p-16 border-2 border-cyan-500/30 text-center flex flex-col items-center justify-center space-y-6">
+          <!-- EDIT: CONTACT_INFO -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl"> 096969674584 </p>
+          <!-- EDIT: EMAIL_PLACEHOLDER -->
+          <p class="text-cyan-400 font-medium text-base mono-font"> njomari743@gmail.com </p>
+          <!-- EDIT: SOCIAL_LINK (Anchor tag required by prompt) -->
+          <div>
+            <a href="#" class="neon-button-secondary px-6 py-2.5 rounded-xl text-sm font-semibold text-cyan-300 inline-flex items-center gap-2">
+              <svg class="w-4 h-4 text-cyan-400 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg> www.linkedin.com/in/jomari-nacional-829286350 </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- Wireframe: Single full-width rounded stadium card with "Footer" -->
+    <!-- ========================================== -->
+    <footer class="max-w-6xl mx-auto px-6 pb-12 pt-4">
+      <div class="cyber-card stadium-border py-6 px-8 border border-cyan-500/30 text-center">
+        <!-- EDIT: FOOTER_TEXT -->
+        <p class="text-slate-400 text-sm sm:text-base font-medium"> Footer </p>
+      </div>
+    </footer>
+  </body>
+</html>
